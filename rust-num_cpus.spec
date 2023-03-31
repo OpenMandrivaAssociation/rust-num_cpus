@@ -5,7 +5,7 @@
 
 Name:           rust-%{crate}
 Version:        1.13.0
-Release:        1
+Release:        2
 Summary:        Get the number of CPUs on a machine
 
 # Upstream license specification: MIT/Apache-2.0
