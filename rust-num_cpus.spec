@@ -4,17 +4,15 @@
 %global crate num_cpus
 
 Name:           rust-%{crate}
-Version:        1.13.0
-Release:        2
+Version:        1.16.0
+Release:        1
 Summary:        Get the number of CPUs on a machine
 
 # Upstream license specification: MIT/Apache-2.0
 License:        MIT or ASL 2.0
 URL:            https://crates.io/crates/num_cpus
 Source:         %{crates_source}
-# Initial patched metadata
-# * No non-fedora deps
-Patch0:         num_cpus-fix-metadata.diff
+Patch0:		num_cpus-allow-newer-hermit-abi.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
